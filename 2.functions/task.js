@@ -1,8 +1,10 @@
 // Задание 1
 function getArrayParams(arr) {
   let min, max, sum, avg;
-
-  // Ваш код
+  min = -100;
+  max = 100;
+  for 
+ 
 
   return { min: min, max: max, avg: avg };
 }
