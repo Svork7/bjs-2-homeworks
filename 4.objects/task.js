@@ -24,14 +24,8 @@ Student.prototype.addMarks = function(...marks) {
   }
 }
 
-Student.prototype.getAverage = function() {
-  let x = 0;
-  let res = 0;
-  for (i = 0; i < this.marks.length; i++) {
-    x += this.marks[i];
-  }
-  return res = x / this.marks.length;
-}
+Student.prototype.getAverage = this.marks.reduce((acc, item, idx) => acc + this.marks[idx]) / (this.marks.length);
+
 
 
 Student.prototype.exclude = function(reason) {
